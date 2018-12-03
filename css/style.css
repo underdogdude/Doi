@@ -1,0 +1,209 @@
+@font-face {
+    font-family: "Circular";
+    src: url("../fonts/Circular.ttf");
+}
+
+@font-face {
+    font-family: "Circular";
+    src: url("../fonts/CircularBold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "THSarabunNew";
+    src: url("../fonts/THSarabunNew.ttf");
+}
+
+@font-face {
+    font-family: "THSarabunNew";
+    src: url("../fonts/THSarabunNew\ Bold.ttf");
+    font-weight: bold;
+}
+
+
+body {
+    height: 100%;
+    width: 100%;
+    background: #FFF4E0;
+    font-family: 'THSarabunNew';
+    font-size: 28px;
+
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.2);
+    background: -webkit-gradient(linear, left bottom, left top, from(hsla(200, 33%, 34%, 0)), to(rgba(0, 0, 0, 0.4)));
+    background: -webkit-linear-gradient(bottom, hsla(200, 33%, 34%, 0), rgba(0, 0, 0, 0.4));
+    background: -o-linear-gradient(bottom, hsla(200, 33%, 34%, 0), rgba(0, 0, 0, 0.4));
+    background: linear-gradient(to top, hsla(200, 33%, 34%, 0), rgba(0, 0, 0, 0.4));
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.header-color {
+    width: 100%;
+    background: #00853E;
+}
+
+.header-logo {
+    max-width: 100%;
+    width: 100px;
+}
+
+.slide-header {
+    background: url('../img/Header.jpg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 710px;
+}
+
+.title {
+    font-family: "Circular";
+}
+
+.nav-title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+}
+
+.main-title {
+    font-size: 90px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 35px;
+    color: #3C3C3B;
+    margin-bottom: 10px;
+}
+
+.sub-title {
+    color: #3AAA35;
+    margin-bottom: 5px;
+
+}
+
+.sub-title.letter-space {
+    letter-spacing: 8px;
+}
+
+.sub-title-2 {
+    color: #00853E;
+}
+
+.content {
+    margin-top: 30px;
+}
+
+.content p {
+    text-indent: 30px;
+}
+
+
+footer {
+    background: url('../img/Footer.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    position: relative;
+}
+
+.footer-logo {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.footer-logo img {
+    max-width: 100%;
+    width: 200px;
+}
+
+
+.stamp-title {
+    font-weight: bold;
+    font-size: 60px;
+    margin-bottom: 0;
+    color: #00853E;
+    line-height: .6;
+}
+
+.stamp-title-2 {
+    font-size: 43px;
+    color: #00853E;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.stamp-title-3 {
+    color: #00853E;
+    font-size: 22px;
+}
+
+
+.btn-wrap {
+
+    -ms-flex-wrap: wrap;
+
+        flex-wrap: wrap;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+
+}
+
+.btn-wrap button {
+    font-size: 28px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.line {
+    border-top: 3px solid #76B82A;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 565px) {
+    .nav-link {
+        padding: 0 3px;
+    }
+
+}
+
+@media only screen and (max-width: 513px) {
+    .nav-title {
+        font-size: 2rem;
+    }
+}
+
+
+
+/* Upload Btn */
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+}
+
+.upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
